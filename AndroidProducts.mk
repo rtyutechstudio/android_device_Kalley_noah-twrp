@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_Armor_X5_Q.mk
+    $(LOCAL_DIR)/twrp_noah.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_noah-user \
