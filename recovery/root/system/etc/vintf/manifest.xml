@@ -88,6 +88,14 @@
         <transport></transport>
         <version>1.0</version>
     </hal>
+    <hal format="hidl">
+    	<name>android.hardware.fastboot</name>
+    	<version>1.0</version>
+    	<interface>
+        	<name>IFastboot</name>
+        	<instance>default</instance>
+    	</interface>
+	</hal>
     <vendor-ndk>
         <version>29</version>
     </vendor-ndk>
