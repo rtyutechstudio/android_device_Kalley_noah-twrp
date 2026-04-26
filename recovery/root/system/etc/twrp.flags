@@ -15,9 +15,9 @@
 
 # Encryption / userdata
 # Official fstab maps metadata to md_udc, not metadata
-/metadata       ext4    /dev/block/platform/bootdevice/by-name/md_udc      flags=backup=1;display="Metadata"
+/metadata       ext4    /dev/block/platform/bootdevice/by-name/md_udc      flags=backup=1;display="Metadata";formattable
 
-/data           ext4    /dev/block/platform/bootdevice/by-name/userdata    flags=backup=1;display="Data";wipeingui;formatdata;fileencryption=aes-256-xts:aes-256-cts:v2;keydirectory=/metadata/vold/metadata_encryption;quota;reservedsize=128M
+/data           ext4    /dev/block/platform/bootdevice/by-name/userdata    flags=backup=1;display="Data";wipeingui;fileencryption=aes-256-xts:aes-256-cts:v2;keydirectory=/metadata/vold/metadata_encryption;quota;formattable
 
 
 # Cache
