@@ -143,6 +143,9 @@ TW_DEFAULT_BRIGHTNESS := 1200
 TW_NO_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 
+# Fix fastboot reboot
+TW_NO_FASTBOOT_BOOT := true
+
 # Exclude
 TW_EXCLUDE_TWRPAPP := true
 
