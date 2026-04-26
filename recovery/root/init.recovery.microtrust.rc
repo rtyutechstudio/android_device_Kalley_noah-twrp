@@ -131,7 +131,7 @@ service thh-2-0 /vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
     group system
     disabled
 
-service vendor.keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+service vendor.keymaster-4-1-beanpod /system/bin/keymaster_decrypt_wrapper.sh
     interface android.hardware.keymaster@4.0::IKeymasterDevice default
     interface android.hardware.keymaster@4.1::IKeymasterDevice default
     class early_hal
