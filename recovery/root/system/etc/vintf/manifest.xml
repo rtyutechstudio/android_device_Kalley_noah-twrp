@@ -90,6 +90,7 @@
     </hal>
     <hal format="hidl">
     	<name>android.hardware.fastboot</name>
+	<transport>hwbinder</transport>
     	<version>1.0</version>
     	<interface>
         	<name>IFastboot</name>
